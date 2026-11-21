@@ -1,11 +1,13 @@
 // step 1: Add a useState Hook
 
-import { useState } from "react";
-import { coffeeBeans } from "../data";
+import { useContext, useState } from "react";
+import { ProductContext } from "../context/ProductContext";
 
 // Step 2: Create the component 
 
 function ProductSearch() {
+
+    const {products} = useContext(ProductContext);
 
     //   Step 3: stepping up useState, setfunction & destructuring
 
@@ -13,7 +15,7 @@ function ProductSearch() {
 
     // filtering my coffeebeans by name
 
-    const result = coffeeBeans.filter((bean) => 
+    const result = products.filter((bean) => 
     bean.name.toLowerCase().includes(myProduct.toLowerCase())
     );
 
