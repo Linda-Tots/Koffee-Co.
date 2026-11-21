@@ -87,5 +87,20 @@ export const coffeeBeans = [
     inStock: true,
     image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=80&auto=format&fit=crop",
     description: "Bright, fruity and complex."
-  }
-];
+  },
+
+  {
+    
+    id: 9,
+    name: "Tanzanian Peaberry",
+    origin: "Tanzania",
+    beanType: "Arabica",
+    price: 1650,
+    weight: "500g",
+    inStock: true,
+    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500",
+    description: "Sweet, bright and smooth. A rare peaberry from Kilimanjaro.",
+  
+  },
+
+]
