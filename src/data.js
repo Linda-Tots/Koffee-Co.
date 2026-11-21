@@ -1,3 +1,4 @@
+// Coffee beans data
 export const coffeeBeans = [
   {
     id: 1,
