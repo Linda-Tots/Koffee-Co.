@@ -1,5 +1,4 @@
 import ProductSearch from "../components/ProductSearch";
-
 function ProductsPage() {
     return(
         <div>
