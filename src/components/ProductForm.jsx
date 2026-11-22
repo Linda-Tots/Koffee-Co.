@@ -25,15 +25,50 @@ function ProductForm(){
 
 
     return(
-        <div>
-            <form onSubmit={handleSubmit} >
-                <h2> Add New KoffeeProduct</h2>
-                <input type="text" name="name" placeholder="Product name" />
-                <input type="text" name="origin" placeholder="Origin" />
-                <input type="text" name="price" placeholder="Price" required/>
-                <input type="text" name="beanType" placeholder="Bean type" />
+        <div className="w-full max-w-3xl mx-auto">
+            <form 
+                onSubmit={handleSubmit} 
+                className="bg-white p-8 rounded-xl shadow-sm border border-[#D6C2A8] flex flex-col gap-5"
+            >
+                <h2 className="text-2xl font-bold text-[#4A1F16]"> 
+                    Add New Coffee Product
+                </h2>
+                <p className="text-[#8B6B5C] text-sm">
+                    Enter the details of the coffee product you want to add.
+                </p>
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Product name" 
+                    className="w-full border border-[#D6C2A8] rounded-lg px-4 py-3 text-[#4A1F16] placeholder-[#8B6B5C] outline-none focus:ring-2 focus:ring-[#C49A6C]"
+                />
+                <input 
+                    type="text" 
+                    name="origin" 
+                    placeholder="Origin" 
+                    className="w-full border border-[#D6C2A8] rounded-lg px-4 py-3 text-[#4A1F16] placeholder-[#8B6B5C] outline-none focus:ring-2 focus:ring-[#C49A6C]"
+                />
+                <input 
+                    type="number" 
+                    min="0"
+                    name="price" 
+                    placeholder="Price" 
+                    required
+                    className="w-full border border-[#D6C2A8] rounded-lg px-4 py-3 text-[#4A1F16] placeholder-[#8B6B5C] outline-none focus:ring-2 focus:ring-[#C49A6C]"
+                />
+                <input 
+                    type="text" 
+                    name="beanType" 
+                    placeholder="Bean type" 
+                    className="w-full border border-[#D6C2A8] rounded-lg px-4 py-3 text-[#4A1F16] placeholder-[#8B6B5C] outline-none focus:ring-2 focus:ring-[#C49A6C]"
+                />
 
-                <button type="submit"> Add Product</button>
+                <button 
+                    type="submit"
+                    className="bg-[#4A1F16] text-[#F8EBCB] font-semibold py-3 rounded-lg hover:bg-[#6B3828] transition-colors"
+                > 
+                    Add Product
+                </button>
             </form>
         </div>
 

@@ -30,7 +30,7 @@ function DashboardPage() {
                 
                 <StatCard
                   title="Out of Stock"
-                  value="-"
+                  value="7"
                   description="Stock status"
                 />
               </div>

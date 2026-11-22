@@ -22,8 +22,8 @@ function Sidebar() {
                     Products
                 </a>
 
-                <a href="/orders" className="p-3 rounded-lg hover:bg-[#6B3828]">
-                    Orders
+                <a href="/add-product" className="p-3 rounded-lg hover:bg-[#6B3828]">
+                    Add Product
                 </a>
 
                 <a href="/analytics" className="p-3 rounded-lg hover:bg-[#6B3828]">
