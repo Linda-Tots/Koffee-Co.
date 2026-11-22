@@ -24,21 +24,30 @@ function ProductSearch() {
     return (
 
         // search in put display
-        <div>
+        <div className="w-full">
             <input 
                   type="text"
                   placeholder="search coffee beans..."
                   value={myProduct}
                   onChange={(e) => setMyProduct(e.target.value)}
-                
+                  className="w-full max-w-md bg-white border border-[#D6C2A8] rounded-lg px-4 py-3 text-[#4A1F16] placeholder-[#8B6B5C] outline-none focus:ring-2 focus:ring-[#C49A6C]"
                  />     
 
-                 <div>
+                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     {result.map((bean) => (
-                        <div key={bean.id}>
-                            <h3>{bean.name}</h3>
-                            <p>{bean.origin}</p>
-                            <p>Ksh {bean.price}</p>
+                        <div 
+                            key={bean.id}
+                            className="bg-white border border-[#D6C2A8] rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                        >
+                            <h3 className="text-xl font-bold text-[#4A1F16]"> 
+                                {bean.name}
+                            </h3>
+                            <p className="text-[#8B6B5C] mt-2">
+                                {bean.origin}
+                            </p>
+                            <p className="text-lg font-semibold text-[#4A1F16] mt-4">
+                                Ksh {bean.price}
+                            </p>
                         </div>
                     ))}
 
