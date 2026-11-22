@@ -1,15 +1,15 @@
 function SalesOverview() {
     return (
         <div className="bg-[#4A1D16] text-[#F8EBCB] p-5 rounded-lg h-full">
-            <h2 className="text-lg font-bold">
+            <h2 className="text-xl font-bold">
                 Sales Overview
             </h2>
 
-            <p className="text-2xl font-bold mt-2">
+            <p className="text-3xl font-bold mt-2">
                 Ksh 200,000
             </p>
 
-            <p className="text-xs mt-1 text-[#E8D8B5]">
+            <p className="text-sm mt-1 text-[#E8D8B5]">
                 Weekly Sales Performance
             </p>
 

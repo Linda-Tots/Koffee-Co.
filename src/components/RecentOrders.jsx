@@ -1,12 +1,12 @@
 function RecentOrders() {
     return (
-        <div className="mt-8 bg-white rounded-lg p-6 border border-gray-200">
-            <h2 className="text-lg font-bold text-[#4A1F16] mb-5" >
+        <div className="mt-5 bg-[#4A1F16] rounded-lg p-6">
+            <h2 className="text-xl font-bold text-[#F8EBCB] mb-5" >
                 Recent Orders
             </h2>
 
             {/* Table headings */}
-            <div className="grid grid-cols-4 gap-4 text-sm font-bold text-gray-500 border-b pb-3">
+            <div className="grid grid-cols-4 gap-4 text-sm font-bold text-[#F8EBCB] px-3 pb-3">
                 <p>Order ID</p>
                 <p>Customer</p>
                 <p>Product</p>
@@ -14,7 +14,7 @@ function RecentOrders() {
             </div>
 
             {/* First order */}
-            <div className="grid grid-cols-4 gap-4 text-sm tex-gray-700 py-4 border-gray-100">
+            <div className="grid grid-cols-4 gap-4 text-sm text-[#4A1F16] bg-[#F8EBCB] p-4 rounded-lg mb-3">
                 <p>#001</p>
                 <p>Customer 1</p>
                 <p>Ethiopian Arabica</p>
@@ -22,7 +22,7 @@ function RecentOrders() {
             </div>
 
             {/* Second Order */}
-            <div className="grid grid-cols-4 gap-4 text-sm text-gray-700 py-4">
+            <div className="grid grid-cols-4 gap-4 text-[#4A1F16] bg-[#F8EBCB] p-4 rounded-lg">
                 <p>#002</p>
                 <p>Customer 2</p>
                 <p>Kenyan Arabica</p>

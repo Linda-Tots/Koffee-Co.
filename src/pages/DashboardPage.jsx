@@ -4,25 +4,24 @@ import RecentOrders from "../components/RecentOrders";
 
 function DashboardPage() {
     return (
-        <div>
-            <header className="flex item-center justify-between mb-8">
-                <div>
-                    <h1 className="text-2x1 font-bold text-gray-900">
+        <div className="w-full max-w-6xl mx-auto">
+
+            <header className="mb-8">
+                    <h1 className="text-3xl font-bold text-[#4A1F16]">
                         Dashboard
                     </h1>
-                    <p className="text-sm text-gray-500 mt-1">
+                    <p className="text-base text-gray-500 mt-1">
                         Welcome back to Koffee & Co.
                     </p>
-                </div>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5 min-h-[320px]">
 
-                <div className="md:col-span-2">
+                <div className="min-h-[320px]">
                   <SalesOverview />
                 </div>
 
-                <div className="flex flex-col gap-4"></div>
+                <div className="grid grid-rows-2 gap-5 min-h-[320px]">
                   <StatCard 
                     title="Most Ordered"
                     value="Arabica"
@@ -34,9 +33,13 @@ function DashboardPage() {
                   value="-"
                   description="Stock status"
                 />
-            </div>
+              </div>
+             </div>
+
+            <div className="mt-5">
             <RecentOrders />
-        </div>
+            </div>
+      </div>
     );
 }
 
