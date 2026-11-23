@@ -39,6 +39,14 @@ function ProductSearch() {
                             key={bean.id}
                             className="bg-white border border-[#D6C2A8] rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
                         >
+
+                            <img
+                             src={bean.image}
+                             alt={bean.name}
+                             className="w-full h-48 object-cover"
+
+                              />
+                            
                             <h3 className="text-xl font-bold text-[#4A1F16]"> 
                                 {bean.name}
                             </h3>
